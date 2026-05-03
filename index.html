@@ -19,6 +19,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: radial-gradient(circle at top, #0b1f3b 0%, var(--bg) 45%);
   color: var(--text);
+  overflow-x: hidden;
 }
 
 .page {
@@ -27,7 +28,27 @@ body {
   padding: 50px 20px;
 }
 
-/* HEADER */
+/* ===== ANIMATIONS ===== */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.fade-up:nth-child(2){ animation-delay: 0.1s; }
+.fade-up:nth-child(3){ animation-delay: 0.2s; }
+.fade-up:nth-child(4){ animation-delay: 0.3s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== HEADER ===== */
+
 header {
   text-align: center;
   padding: 60px 20px 40px;
@@ -65,6 +86,8 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* ===== BUTTONS ===== */
+
 .buttons {
   display: flex;
   justify-content: center;
@@ -78,13 +101,13 @@ h1 {
   border-radius: 999px;
   text-decoration: none;
   font-weight: 700;
-  transition: 0.25s;
+  transition: 0.3s;
   box-shadow: 0 8px 20px rgba(56,189,248,0.3);
 }
 
 .button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(56,189,248,0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(56,189,248,0.6);
 }
 
 .button.secondary {
@@ -93,18 +116,20 @@ h1 {
   color: #fff;
 }
 
-/* SECTIONS */
+/* ===== SECTIONS ===== */
+
 section {
   background: rgba(15,23,36,0.85);
   border-radius: 20px;
   padding: 28px;
   margin-bottom: 22px;
   box-shadow: 0 25px 60px rgba(0,0,0,0.4);
-  transition: 0.25s;
+  transition: 0.3s;
 }
 
 section:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
 }
 
 h2 {
@@ -116,7 +141,8 @@ p {
   margin-bottom: 10px;
 }
 
-/* EXPERIENCE */
+/* ===== EXPERIENCE ===== */
+
 .item {
   padding: 15px 0;
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -145,27 +171,45 @@ li {
   color: var(--muted);
 }
 
-/* GRID */
+/* ===== GRID ===== */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 16px;
 }
 
-/* MINI CARDS */
+/* ===== MINI CARDS ===== */
+
 .mini-card {
   background: linear-gradient(145deg,#0a0f18,#14223b);
   padding: 18px;
   border-radius: 16px;
-  transition: 0.25s;
+  transition: 0.3s;
+  position: relative;
+}
+
+.mini-card::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:16px;
+  background: radial-gradient(circle at top, rgba(56,189,248,0.15), transparent);
+  opacity:0;
+  transition:0.3s;
+}
+
+.mini-card:hover::after {
+  opacity:1;
 }
 
 .mini-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
 
-/* SKILLS */
+/* ===== SKILLS ===== */
+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -177,18 +221,23 @@ li {
   padding: 8px 14px;
   border-radius: 999px;
   font-size: 13px;
+  transition: 0.3s;
 }
 
 .skill:hover {
   color: var(--accent);
+  border-color: var(--accent);
 }
 
-/* FOOTER */
+/* ===== FOOTER ===== */
+
 footer {
   text-align: center;
   margin-top: 10px;
   color: var(--muted);
 }
+
+/* ===== MOBILE ===== */
 
 @media(max-width:700px){
   .grid { grid-template-columns:1fr; }
@@ -198,9 +247,9 @@ footer {
 
 <body>
 
-<main class="page">
+<main class="page fade-up">
 
-<header>
+<header class="fade-up">
   <div class="tag">IT Systems & Service Operations</div>
   <h1>Nerit Qerkezi</h1>
   <div class="headline">IT Technician</div>
@@ -219,18 +268,13 @@ footer {
   </div>
 </header>
 
-<section>
+<section class="fade-up">
 <h2>About</h2>
-<p>
-I work in IT service environments where systems need to be diagnosed and fixed quickly.
-Most of my experience comes from real client work — hardware issues, installs, upgrades, and troubleshooting.
-</p>
-<p>
-I’m used to handling multiple systems at once and keeping work organized so everything runs smoothly.
-</p>
+<p>I work in IT service environments where systems need to be diagnosed and fixed quickly.</p>
+<p>Used to handling multiple systems at once while keeping work organized and stable.</p>
 </section>
 
-<section>
+<section class="fade-up">
 <h2>Experience</h2>
 
 <div class="item">
@@ -248,7 +292,7 @@ I’m used to handling multiple systems at once and keeping work organized so ev
 <div class="date">2024 – 2025</div>
 <ul>
 <li>Help clients choose hardware and electronics</li>
-<li>Handle communication and after-sales support</li>
+<li>Handle communication and support</li>
 </ul>
 </div>
 
@@ -256,46 +300,45 @@ I’m used to handling multiple systems at once and keeping work organized so ev
 <h3>IT Servicer — Point Computers</h3>
 <div class="date">2019 – 2024</div>
 <ul>
-<li>Resolved 1000+ hardware and software issues</li>
-<li>Worked with 200+ client systems</li>
-<li>Improved repair speed through better diagnostics</li>
+<li>Resolved 1000+ issues</li>
+<li>Worked with 200+ systems</li>
+<li>Improved repair workflow</li>
 </ul>
 </div>
 
 </section>
 
-<section>
+<section class="fade-up">
 <h2>Selected Work</h2>
 
 <div class="grid">
 
 <div class="mini-card">
 <h3>Diagnostics</h3>
-<p>Handled different types of issues from hardware faults to system errors.</p>
+<p>Handled different system issues from hardware faults to OS problems.</p>
 </div>
 
 <div class="mini-card">
 <h3>Client Systems</h3>
-<p>Worked with many active systems while keeping stability and data safe.</p>
+<p>Maintained multiple active systems with stable performance.</p>
 </div>
 
 <div class="mini-card">
 <h3>Workflow</h3>
-<p>Improved how repairs are handled to reduce time and confusion.</p>
+<p>Improved repair process to reduce time and confusion.</p>
 </div>
 
 <div class="mini-card">
 <h3>Upgrades</h3>
-<p>Improved performance using SSD, RAM upgrades, and clean setups.</p>
+<p>Improved systems with SSD, RAM upgrades and setup.</p>
 </div>
 
 </div>
 
 </section>
 
-<section>
+<section class="fade-up">
 <h2>Skills</h2>
-
 <div class="skills">
 <span class="skill">Diagnostics</span>
 <span class="skill">Hardware</span>
@@ -304,10 +347,9 @@ I’m used to handling multiple systems at once and keeping work organized so ev
 <span class="skill">Upgrades</span>
 <span class="skill">Support</span>
 </div>
-
 </section>
 
-<section>
+<section class="fade-up">
 <h2>Certificates</h2>
 <ul>
 <li>CCNA 1–4</li>
@@ -315,7 +357,7 @@ I’m used to handling multiple systems at once and keeping work organized so ev
 </ul>
 </section>
 
-<footer>
+<footer class="fade-up">
 © 2026 Nerit Qerkezi
 </footer>
 
