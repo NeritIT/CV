@@ -21,14 +21,13 @@ body {
   color: var(--text);
 }
 
-/* ===== PAGE ===== */
 .page {
   max-width: 900px;
   margin: 0 auto;
   padding: 50px 20px;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header {
   text-align: center;
   padding: 60px 20px 40px;
@@ -66,7 +65,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* ===== BUTTONS ===== */
+/* BUTTONS */
 .buttons {
   display: flex;
   justify-content: center;
@@ -89,7 +88,7 @@ h1 {
   color: #fff;
 }
 
-/* ===== SECTIONS ===== */
+/* SECTIONS */
 section {
   background: rgba(15,23,36,0.85);
   border-radius: 20px;
@@ -105,7 +104,7 @@ p {
   margin-bottom: 10px;
 }
 
-/* ===== EXPERIENCE ===== */
+/* EXPERIENCE */
 .item {
   padding: 15px 0;
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -126,21 +125,21 @@ li {
   color: var(--muted);
 }
 
-/* ===== GRID ===== */
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 16px;
 }
 
-/* ===== MINI CARDS ===== */
+/* MINI CARDS */
 .mini-card {
   background: linear-gradient(145deg,#0a0f18,#14223b);
   padding: 18px;
   border-radius: 16px;
 }
 
-/* ===== SKILLS ===== */
+/* SKILLS */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -154,7 +153,7 @@ li {
   font-size: 13px;
 }
 
-/* ===== FLOATING BUTTONS ===== */
+/* FLOATING */
 .floating {
   position: fixed;
   right: 20px;
@@ -173,14 +172,8 @@ li {
   justify-content:center;
   background: linear-gradient(135deg,#38bdf8,#0ea5e9);
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-  transition: 0.3s;
 }
 
-.float-btn:hover {
-  transform: scale(1.1);
-}
-
-/* SVG ICON */
 .float-btn svg {
   width: 22px;
   height: 22px;
@@ -208,7 +201,7 @@ li {
   </p>
 
   <div class="top-contact">
-    +383 44 404 577 • nerit_qerkezi@outlook.com
+   Phone +383 44 404 577 • Mail nerit_qerkezi@outlook.com
   </div>
 
   <div class="buttons">
@@ -257,25 +250,73 @@ li {
 
 </section>
 
+<section>
+<h2>Selected Work</h2>
+<div class="grid">
+<div class="mini-card"><h3>Diagnostics</h3><p>Handled system issues.</p></div>
+<div class="mini-card"><h3>Client Systems</h3><p>Maintained multiple systems.</p></div>
+<div class="mini-card"><h3>Workflow</h3><p>Improved repair process.</p></div>
+<div class="mini-card"><h3>Upgrades</h3><p>Improved performance.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Content Creation</h2>
+<div class="item">
+<h3>Short-form Content</h3>
+<ul>
+<li>Create content for Instagram and TikTok</li>
+<li>Edit using Premiere Pro</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>Skills</h2>
+<div class="skills">
+<span class="skill">Diagnostics</span>
+<span class="skill">Hardware</span>
+<span class="skill">Windows</span>
+<span class="skill">BIOS</span>
+<span class="skill">Upgrades</span>
+<span class="skill">Support</span>
+</div>
+</section>
+
+<section>
+<h2>Certificates</h2>
+<ul>
+<li>CCNA 1–4</li>
+<li>IT Essentials</li>
+</ul>
+</section>
+
+  <section>
+  <h2>Content Creation</h2>
+
+  <div class="item">
+    <h3>Short-Form Video Editing</h3>
+    <div class="date">Ongoing</div>
+    <ul>
+      <li>Create short-form content for Instagram and TikTok</li>
+      <li>Edit videos using Adobe Premiere Pro</li>
+      <li>Focus on clean visuals, pacing, and simple message delivery</li>
+    </ul>
+  </div>
+
+</section>
 <footer>© 2026 Nerit Qerkezi</footer>
 
 </main>
 
-<!-- FLOATING ICONS -->
 <div class="floating">
-
 <a href="tel:+38344404577" class="float-btn">
-<svg viewBox="0 0 24 24">
-<path d="M6.6 10.8c1.4 2.7 3.9 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.6.6 4 .6.6 0 1 .4 1 1V21c0 .6-.4 1-1 1C10.1 22 2 13.9 2 3c0-.6.4-1 1-1h4.5c.6 0 1 .4 1 1 0 1.4.2 2.8.6 4 .1.4 0 .8-.3 1.1l-2.2 2.2z"/>
-</svg>
+<svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.7 3.9 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.6.6 4 .6.6 0 1 .4 1 1V21c0 .6-.4 1-1 1C10.1 22 2 13.9 2 3c0-.6.4-1 1-1h4.5c.6 0 1 .4 1 1 0 1.4.2 2.8.6 4 .1.4 0 .8-.3 1.1l-2.2 2.2z"/></svg>
 </a>
 
 <a href="mailto:nerit_qerkezi@outlook.com" class="float-btn">
-<svg viewBox="0 0 24 24">
-<path d="M2 4h20v16H2V4zm10 9L3 6v12h18V6l-9 7z"/>
-</svg>
+<svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm10 9L3 6v12h18V6l-9 7z"/></svg>
 </a>
-
 </div>
 
 </body>
