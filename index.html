@@ -19,36 +19,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: radial-gradient(circle at top, #0b1f3b 0%, var(--bg) 45%);
   color: var(--text);
-  overflow-x: hidden;
 }
 
+/* ===== PAGE ===== */
 .page {
   max-width: 900px;
   margin: 0 auto;
   padding: 50px 20px;
 }
 
-/* ===== ANIMATIONS ===== */
-
-.fade-up {
-  opacity: 0;
-  transform: translateY(25px);
-  animation: fadeUp 0.8s ease forwards;
-}
-
-.fade-up:nth-child(2){ animation-delay: 0.1s; }
-.fade-up:nth-child(3){ animation-delay: 0.2s; }
-.fade-up:nth-child(4){ animation-delay: 0.3s; }
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* ===== HEADER ===== */
-
 header {
   text-align: center;
   padding: 60px 20px 40px;
@@ -87,7 +67,6 @@ h1 {
 }
 
 /* ===== BUTTONS ===== */
-
 .buttons {
   display: flex;
   justify-content: center;
@@ -102,12 +81,6 @@ h1 {
   text-decoration: none;
   font-weight: 700;
   transition: 0.3s;
-  box-shadow: 0 8px 20px rgba(56,189,248,0.3);
-}
-
-.button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 30px rgba(56,189,248,0.6);
 }
 
 .button.secondary {
@@ -117,24 +90,15 @@ h1 {
 }
 
 /* ===== SECTIONS ===== */
-
 section {
   background: rgba(15,23,36,0.85);
   border-radius: 20px;
   padding: 28px;
   margin-bottom: 22px;
   box-shadow: 0 25px 60px rgba(0,0,0,0.4);
-  transition: 0.3s;
 }
 
-section:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
-}
-
-h2 {
-  margin-bottom: 12px;
-}
+h2 { margin-bottom: 12px; }
 
 p {
   color: var(--muted);
@@ -142,19 +106,12 @@ p {
 }
 
 /* ===== EXPERIENCE ===== */
-
 .item {
   padding: 15px 0;
   border-top: 1px solid rgba(255,255,255,0.08);
 }
 
-.item:first-child {
-  border-top: none;
-}
-
-h3 {
-  margin-bottom: 4px;
-}
+.item:first-child { border-top: none; }
 
 .date {
   color: var(--accent);
@@ -162,9 +119,7 @@ h3 {
   margin-bottom: 6px;
 }
 
-ul {
-  padding-left: 20px;
-}
+ul { padding-left: 20px; }
 
 li {
   margin-bottom: 6px;
@@ -172,7 +127,6 @@ li {
 }
 
 /* ===== GRID ===== */
-
 .grid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -180,36 +134,13 @@ li {
 }
 
 /* ===== MINI CARDS ===== */
-
 .mini-card {
   background: linear-gradient(145deg,#0a0f18,#14223b);
   padding: 18px;
   border-radius: 16px;
-  transition: 0.3s;
-  position: relative;
-}
-
-.mini-card::after {
-  content:"";
-  position:absolute;
-  inset:0;
-  border-radius:16px;
-  background: radial-gradient(circle at top, rgba(56,189,248,0.15), transparent);
-  opacity:0;
-  transition:0.3s;
-}
-
-.mini-card:hover::after {
-  opacity:1;
-}
-
-.mini-card:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
 
 /* ===== SKILLS ===== */
-
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -221,24 +152,38 @@ li {
   padding: 8px 14px;
   border-radius: 999px;
   font-size: 13px;
+}
+
+/* ===== FLOATING BUTTONS ===== */
+.floating {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.float-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px;
+  text-decoration:none;
+  background: linear-gradient(135deg,#38bdf8,#0ea5e9);
+  color:#000;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
   transition: 0.3s;
 }
 
-.skill:hover {
-  color: var(--accent);
-  border-color: var(--accent);
-}
-
-/* ===== FOOTER ===== */
-
-footer {
-  text-align: center;
-  margin-top: 10px;
-  color: var(--muted);
+.float-btn:hover {
+  transform: scale(1.1);
 }
 
 /* ===== MOBILE ===== */
-
 @media(max-width:700px){
   .grid { grid-template-columns:1fr; }
 }
@@ -247,9 +192,9 @@ footer {
 
 <body>
 
-<main class="page fade-up">
+<main class="page">
 
-<header class="fade-up">
+<header>
   <div class="tag">IT Systems & Service Operations</div>
   <h1>Nerit Qerkezi</h1>
   <div class="headline">IT Technician</div>
@@ -259,7 +204,7 @@ footer {
   </p>
 
   <div class="top-contact">
-    Phone +383 44 404 577 • Mail nerit_qerkezi@outlook.com
+    +383 44 404 577 • nerit_qerkezi@outlook.com
   </div>
 
   <div class="buttons">
@@ -268,13 +213,13 @@ footer {
   </div>
 </header>
 
-<section class="fade-up">
+<section>
 <h2>About</h2>
 <p>I work in IT service environments where systems need to be diagnosed and fixed quickly.</p>
 <p>Used to handling multiple systems at once while keeping work organized and stable.</p>
 </section>
 
-<section class="fade-up">
+<section>
 <h2>Experience</h2>
 
 <div class="item">
@@ -308,36 +253,19 @@ footer {
 
 </section>
 
-<section class="fade-up">
+<section>
 <h2>Selected Work</h2>
 
 <div class="grid">
-
-<div class="mini-card">
-<h3>Diagnostics</h3>
-<p>Handled different system issues from hardware faults to OS problems.</p>
-</div>
-
-<div class="mini-card">
-<h3>Client Systems</h3>
-<p>Maintained multiple active systems with stable performance.</p>
-</div>
-
-<div class="mini-card">
-<h3>Workflow</h3>
-<p>Improved repair process to reduce time and confusion.</p>
-</div>
-
-<div class="mini-card">
-<h3>Upgrades</h3>
-<p>Improved systems with SSD, RAM upgrades and setup.</p>
-</div>
-
+<div class="mini-card"><h3>Diagnostics</h3><p>Handled hardware and OS issues.</p></div>
+<div class="mini-card"><h3>Client Systems</h3><p>Maintained multiple systems.</p></div>
+<div class="mini-card"><h3>Workflow</h3><p>Improved repair process.</p></div>
+<div class="mini-card"><h3>Upgrades</h3><p>SSD, RAM, setups.</p></div>
 </div>
 
 </section>
 
-<section class="fade-up">
+<section>
 <h2>Skills</h2>
 <div class="skills">
 <span class="skill">Diagnostics</span>
@@ -349,7 +277,7 @@ footer {
 </div>
 </section>
 
-<section class="fade-up">
+<section>
 <h2>Certificates</h2>
 <ul>
 <li>CCNA 1–4</li>
@@ -357,11 +285,15 @@ footer {
 </ul>
 </section>
 
-<footer class="fade-up">
-© 2026 Nerit Qerkezi
-</footer>
+<footer>© 2026 Nerit Qerkezi</footer>
 
 </main>
+
+<!-- FLOATING CONTACT -->
+<div class="floating">
+  <a href="tel:+38344404577" class="float-btn">📞</a>
+  <a href="mailto:nerit_qerkezi@outlook.com" class="float-btn">✉️</a>
+</div>
 
 </body>
 </html>
