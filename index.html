@@ -1,143 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nerit Qerkezi</title>
+
+<style>
+:root {
+  --bg: #070b12;
+  --text: #f3f6fb;
+  --muted: #a9b4c4;
+  --accent: #38bdf8;
+}
+
+/* RESET */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle at top, #0b1f3b 0%, var(--bg) 45%);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+.tag {
+  color: var(--accent);
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  opacity: 0.85;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.headline {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.subline {
+  color: var(--muted);
+  font-size: 17px;
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.button {
+  background: linear-gradient(135deg,#38bdf8,#0ea5e9);
+  color: #000;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.25s;
+  box-shadow: 0 8px 20px rgba(56,189,248,0.3);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(56,189,248,0.5);
+}
+
+.button.secondary {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+/* SECTIONS */
+section {
+  background: rgba(15,23,36,0.85);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 22px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+  transition: 0.25s;
+}
+
+section:hover {
+  transform: translateY(-3px);
+}
+
+h2 {
+  margin-bottom: 12px;
+}
+
+p {
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+/* EXPERIENCE */
+.item {
+  padding: 15px 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.item:first-child {
+  border-top: none;
+}
+
+h3 {
+  margin-bottom: 4px;
+}
+
+.date {
+  color: var(--accent);
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+  color: var(--muted);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 16px;
+}
+
+/* MINI CARDS */
+.mini-card {
+  background: linear-gradient(145deg,#0a0f18,#14223b);
+  padding: 18px;
+  border-radius: 16px;
+  transition: 0.25s;
+}
+
+.mini-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.skill:hover {
+  color: var(--accent);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+@media(max-width:700px){
+  .grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+
 <body>
-  <main class="page">
 
-    <header>
-      <div class="tag">IT Systems & Service Operations</div>
-      <h1>Nerit Qerkezi</h1>
-      <div class="headline">IT Technician</div>
+<main class="page">
 
-      <p class="subline">
-        7+ years working with client systems, diagnostics, repairs, upgrades, and real IT service environments.
-      </p>
+<header>
+  <div class="tag">IT Systems & Service Operations</div>
+  <h1>Nerit Qerkezi</h1>
+  <div class="headline">IT Technician</div>
 
-      <div class="buttons">
-        <a class="button" href="Nerit_Qerkezi_CV.pdf" download>Download Resume</a>
-        <a class="button secondary" href="mailto:nerit_qerkezi@outlook.com">Contact Me</a>
-      </div>
-    </header>
+  <p class="subline">
+    7+ years working with client systems, diagnostics, repairs, upgrades, and real IT service environments.
+  </p>
 
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I work in IT service environments where systems need to be diagnosed, repaired, and returned quickly.
-        Most of my experience comes from real client work — hardware issues, Windows installs, upgrades, and troubleshooting.
-      </p>
-      <p>
-        Over time, I’ve learned to handle multiple systems at once, keep work organized, and maintain stability even when the workload is high.
-      </p>
-    </section>
+  <div class="buttons">
+    <a class="button" href="Nerit_Qerkezi_CV.pdf">Download CV</a>
+    <a class="button secondary" href="mailto:nerit_qerkezi@outlook.com">Contact</a>
+  </div>
+</header>
 
-    <section>
-      <h2>Experience</h2>
+<section>
+<h2>About</h2>
+<p>
+I work in IT service environments where systems need to be diagnosed and fixed quickly.
+Most of my experience comes from real client work — hardware issues, installs, upgrades, and troubleshooting.
+</p>
+<p>
+I’m used to handling multiple systems at once and keeping work organized so everything runs smoothly.
+</p>
+</section>
 
-      <div class="item">
-        <h3>IT Technician — PC Comp</h3>
-        <div class="date">2025 – Present</div>
-        <ul>
-          <li>Diagnose and repair PCs and laptops (hardware + software issues)</li>
-          <li>Handle Windows installs, BIOS setup, upgrades, and performance fixes</li>
-          <li>Work on multiple systems at once while keeping quality consistent</li>
-          <li>Support junior technicians when needed</li>
-        </ul>
-      </div>
+<section>
+<h2>Experience</h2>
 
-      <div class="item">
-        <h3>Sales — Buton Electronics</h3>
-        <div class="date">2024 – 2025</div>
-        <ul>
-          <li>Helped clients choose hardware and electronics based on real needs</li>
-          <li>Handled sales, communication, and after-sales support</li>
-          <li>Recommended products based on compatibility, performance, and budget</li>
-        </ul>
-      </div>
+<div class="item">
+<h3>IT Technician — PC Comp</h3>
+<div class="date">2025 – Present</div>
+<ul>
+<li>Diagnose and fix hardware and software issues</li>
+<li>Handle installs, upgrades, BIOS setup, and performance fixes</li>
+<li>Work on multiple systems at the same time</li>
+</ul>
+</div>
 
-      <div class="item">
-        <h3>IT Servicer & Sales — Point Computers</h3>
-        <div class="date">2019 – 2024</div>
-        <ul>
-          <li>Resolved 1000+ hardware and software issues (boot failures, slow systems, faults)</li>
-          <li>Worked with 200+ active client systems in daily service conditions</li>
-          <li>Reduced repair time by improving how diagnostics were handled</li>
-          <li>Built and maintained custom systems (gaming, office, mining)</li>
-        </ul>
-      </div>
+<div class="item">
+<h3>Sales — Buton Electronics</h3>
+<div class="date">2024 – 2025</div>
+<ul>
+<li>Help clients choose hardware and electronics</li>
+<li>Handle communication and after-sales support</li>
+</ul>
+</div>
 
-    </section>
+<div class="item">
+<h3>IT Servicer — Point Computers</h3>
+<div class="date">2019 – 2024</div>
+<ul>
+<li>Resolved 1000+ hardware and software issues</li>
+<li>Worked with 200+ client systems</li>
+<li>Improved repair speed through better diagnostics</li>
+</ul>
+</div>
 
-    <section>
-      <h2>Selected Work</h2>
-      <div class="grid">
+</section>
 
-        <div class="mini-card">
-          <h3>Diagnostics & Troubleshooting</h3>
-          <p>Worked with a wide range of system issues — hardware faults, OS problems, and performance issues.</p>
-        </div>
+<section>
+<h2>Selected Work</h2>
 
-        <div class="mini-card">
-          <h3>Client Systems</h3>
-          <p>Handled 200+ systems while maintaining stability and avoiding data-loss situations.</p>
-        </div>
+<div class="grid">
 
-        <div class="mini-card">
-          <h3>Workflow Improvement</h3>
-          <p>Improved how diagnostics are handled, reducing repair time and confusion in daily work.</p>
-        </div>
+<div class="mini-card">
+<h3>Diagnostics</h3>
+<p>Handled different types of issues from hardware faults to system errors.</p>
+</div>
 
-        <div class="mini-card">
-          <h3>Custom Builds & Upgrades</h3>
-          <p>Built and upgraded systems based on real use cases (gaming, office, performance).</p>
-        </div>
+<div class="mini-card">
+<h3>Client Systems</h3>
+<p>Worked with many active systems while keeping stability and data safe.</p>
+</div>
 
-      </div>
-    </section>
+<div class="mini-card">
+<h3>Workflow</h3>
+<p>Improved how repairs are handled to reduce time and confusion.</p>
+</div>
 
-    <section>
-      <h2>Content Creation</h2>
+<div class="mini-card">
+<h3>Upgrades</h3>
+<p>Improved performance using SSD, RAM upgrades, and clean setups.</p>
+</div>
 
-      <div class="item">
-        <h3>Short-Form Video Content</h3>
-        <div class="date">Ongoing</div>
-        <ul>
-          <li>Create content for Instagram and TikTok</li>
-          <li>Edit videos using Adobe Premiere Pro</li>
-          <li>Focus on clean visuals, timing, and simple message delivery</li>
-        </ul>
-      </div>
+</div>
 
-    </section>
+</section>
 
-    <section>
-      <h2>Core Skills</h2>
-      <div class="skills">
-        <span class="skill">Hardware Diagnostics</span>
-        <span class="skill">Software Troubleshooting</span>
-        <span class="skill">System Optimization</span>
-        <span class="skill">Windows</span>
-        <span class="skill">BIOS / UEFI</span>
-        <span class="skill">PC Assembly</span>
-        <span class="skill">Upgrades</span>
-        <span class="skill">Remote Support</span>
-      </div>
-    </section>
+<section>
+<h2>Skills</h2>
 
-    <section>
-      <h2>Certificates</h2>
-      <ul>
-        <li>CCNA 1–4</li>
-        <li>IT Essentials</li>
-      </ul>
-    </section>
+<div class="skills">
+<span class="skill">Diagnostics</span>
+<span class="skill">Hardware</span>
+<span class="skill">Windows</span>
+<span class="skill">BIOS</span>
+<span class="skill">Upgrades</span>
+<span class="skill">Support</span>
+</div>
 
-    <section>
-      <h2>Contact</h2>
-      <p><strong>Phone:</strong> +383 44 404 577</p>
-      <p><strong>Email:</strong> nerit_qerkezi@outlook.com</p>
-      <p><strong>Location:</strong> Prishtinë</p>
-    </section>
+</section>
 
-    <footer>
-      © 2026 Nerit Qerkezi
-    </footer>
+<section>
+<h2>Certificates</h2>
+<ul>
+<li>CCNA 1–4</li>
+<li>IT Essentials</li>
+</ul>
+</section>
 
-  </main>
+<section>
+<h2>Contact</h2>
+<p>+383 44 404 577</p>
+<p>nerit_qerkezi@outlook.com</p>
+</section>
+
+<footer>
+© 2026 Nerit Qerkezi
+</footer>
+
+</main>
+
 </body>
+</html>
