@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nerit Qerkezi | IT Technician</title>
-  <meta name="description" content="Nerit Qerkezi - IT Technician & Service Operations. Diagnostics, optimization, hardware support, and workflow improvement." />
 
   <style>
     :root {
@@ -38,50 +37,46 @@
 
     .tag {
       color: var(--accent);
-      font-size: 14px;
-      letter-spacing: 3px;
+      font-size: 13px;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      margin-bottom: 14px;
-      font-weight: 700;
+      margin-bottom: 12px;
+      font-weight: 600;
     }
 
     h1 {
       font-size: clamp(40px, 8vw, 72px);
-      line-height: 1;
-      margin-bottom: 16px;
-      letter-spacing: -2px;
+      margin-bottom: 10px;
+      letter-spacing: -1px;
     }
 
     .headline {
-      font-size: clamp(20px, 4vw, 30px);
-      color: var(--text);
-      margin-bottom: 10px;
-      font-weight: 700;
+      font-size: 22px;
+      margin-bottom: 8px;
+      font-weight: 600;
     }
 
     .subline {
       color: var(--muted);
-      font-size: 17px;
-      max-width: 650px;
-      margin: 0 auto 28px;
+      font-size: 16px;
+      max-width: 600px;
+      margin: 0 auto 24px;
     }
 
     .buttons {
       display: flex;
       justify-content: center;
-      gap: 14px;
+      gap: 12px;
       flex-wrap: wrap;
     }
 
     .button {
-      display: inline-block;
       text-decoration: none;
-      color: var(--bg);
+      color: #000;
       background: var(--accent);
-      padding: 12px 20px;
+      padding: 10px 18px;
       border-radius: 999px;
-      font-weight: 700;
-      transition: transform 0.2s ease, opacity 0.2s ease;
+      font-weight: 600;
     }
 
     .button.secondary {
@@ -90,24 +85,17 @@
       border: 1px solid var(--border);
     }
 
-    .button:hover {
-      transform: translateY(-2px);
-      opacity: 0.92;
-    }
-
     section {
-      background: rgba(15, 23, 36, 0.78);
+      background: rgba(15, 23, 36, 0.75);
       border: 1px solid var(--border);
-      border-radius: 22px;
-      padding: 28px;
-      margin-bottom: 20px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 18px;
     }
 
     h2 {
-      font-size: 22px;
-      margin-bottom: 14px;
-      letter-spacing: -0.3px;
+      font-size: 20px;
+      margin-bottom: 12px;
     }
 
     p {
@@ -116,7 +104,7 @@
     }
 
     .item {
-      padding: 18px 0;
+      padding: 14px 0;
       border-top: 1px solid var(--border);
     }
 
@@ -125,70 +113,59 @@
       padding-top: 0;
     }
 
-    .item:last-child { padding-bottom: 0; }
-
     h3 {
-      font-size: 18px;
-      margin-bottom: 4px;
+      font-size: 17px;
+      margin-bottom: 3px;
     }
 
     .date {
       color: var(--accent);
-      font-size: 14px;
-      margin-bottom: 8px;
-      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 6px;
     }
 
     ul {
-      padding-left: 20px;
+      padding-left: 18px;
       color: var(--muted);
     }
 
-    li { margin-bottom: 6px; }
+    li { margin-bottom: 5px; }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
+      gap: 12px;
     }
 
     .mini-card {
       border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 18px;
+      border-radius: 14px;
+      padding: 14px;
       background: rgba(7, 11, 18, 0.5);
     }
-
-    .mini-card h3 { color: var(--text); }
 
     .skills {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
     }
 
     .skill {
       border: 1px solid var(--border);
-      background: rgba(7, 11, 18, 0.55);
       border-radius: 999px;
-      padding: 9px 13px;
+      padding: 6px 10px;
+      font-size: 13px;
       color: var(--muted);
-      font-size: 14px;
     }
 
     footer {
       text-align: center;
       color: var(--muted);
-      padding: 22px 0 10px;
-      font-size: 14px;
+      padding-top: 10px;
+      font-size: 13px;
     }
 
-    a { color: var(--accent); }
-
     @media (max-width: 700px) {
-      .page { padding: 30px 14px; }
-      header { padding-top: 36px; }
-      section { padding: 22px; }
       .grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -196,22 +173,30 @@
 
 <body>
   <main class="page">
+
     <header>
-      <div class="tag">IT Systems & Service Operations</div>
+      <div class="tag">IT Service • Diagnostics • Support</div>
       <h1>Nerit Qerkezi</h1>
-      <div class="headline">IT Technician & Hardware Specialist</div>
-      <p class="subline">Diagnostics • System Optimization • Hardware Support • Workflow Improvement</p>
+      <div class="headline">IT Technician</div>
+
+      <p class="subline">
+        7+ years working with client systems, repairs, upgrades, and everyday IT problems.
+      </p>
 
       <div class="buttons">
-        <a class="button" href="Nerit_Qerkezi_CV.pdf" download>Download Resume</a>
-        <a class="button secondary" href="mailto:nerit_qerkezi@outlook.com">Contact Me</a>
+        <a class="button" href="Nerit_Qerkezi_CV.pdf" download>Download CV</a>
+        <a class="button secondary" href="mailto:nerit_qerkezi@outlook.com">Contact</a>
       </div>
     </header>
 
     <section>
-      <h2>About Me</h2>
-      <p>IT Technician with 7+ years of hands-on experience in hardware/software diagnostics, system repair, upgrades, and client support across high-volume IT service environments.</p>
-      <p>I focus on practical problem-solving, system stability, repair workflow improvement, and keeping client systems reliable under pressure.</p>
+      <h2>About</h2>
+      <p>
+        I work with computers and client systems every day. Most of my experience comes from diagnosing problems, fixing hardware and software issues, installing Windows, and upgrading systems.
+      </p>
+      <p>
+        I’m used to working under pressure, handling multiple systems at once, and keeping things organized so work moves fast and clean.
+      </p>
     </section>
 
     <section>
@@ -221,9 +206,9 @@
         <h3>IT Technician — PC Comp</h3>
         <div class="date">2025 – Present</div>
         <ul>
-          <li>Lead diagnostics and troubleshooting for client systems.</li>
-          <li>Manage hardware upgrades, configurations, and system optimization.</li>
-          <li>Support junior technicians and maintain service standards.</li>
+          <li>Diagnose and fix client PCs and laptops</li>
+          <li>Handle upgrades, installs, BIOS setup and performance fixes</li>
+          <li>Work on multiple systems at the same time</li>
         </ul>
       </div>
 
@@ -231,58 +216,59 @@
         <h3>Sales — Buton Electronics</h3>
         <div class="date">2024 – 2025</div>
         <ul>
-          <li>Assisted clients with hardware and software product selection.</li>
-          <li>Supported sales, customer communication, and after-sales service.</li>
-          <li>Recommended products based on performance and compatibility needs.</li>
+          <li>Helped clients choose hardware and electronics</li>
+          <li>Handled sales and customer communication</li>
         </ul>
       </div>
 
       <div class="item">
-        <h3>IT Servicer & Sales — Point Computers</h3>
+        <h3>IT Servicer — Point Computers</h3>
         <div class="date">2019 – 2024</div>
         <ul>
-          <li>Resolved 1000+ hardware/software issues.</li>
-          <li>Managed 200+ active client systems with strong satisfaction and zero data-loss incidents.</li>
-          <li>Reduced repair turnaround time by 30% through workflow improvement.</li>
-          <li>Supported sales, inventory, returns, and warranty processes.</li>
+          <li>Resolved 1000+ hardware and software issues</li>
+          <li>Worked with 200+ client systems</li>
+          <li>Improved repair speed through better diagnostics</li>
         </ul>
       </div>
+
     </section>
 
     <section>
       <h2>Selected Work</h2>
       <div class="grid">
+
         <div class="mini-card">
-          <h3>Diagnostic Workflow Improvement</h3>
-          <p>Improved service workflow and reduced average repair turnaround time by 30%.</p>
+          <h3>Faster Repairs</h3>
+          <p>Reduced repair time by improving how diagnostics are handled.</p>
         </div>
+
         <div class="mini-card">
-          <h3>Client Systems Management</h3>
-          <p>Handled 200+ active client systems with strong satisfaction and zero data-loss incidents.</p>
+          <h3>Client Systems</h3>
+          <p>Handled 200+ systems with stable performance and no data loss.</p>
         </div>
+
         <div class="mini-card">
-          <h3>High-Volume PC Build Tracking</h3>
-          <p>Designed a practical tracking system for multiple PC builds to improve accountability and reduce confusion.</p>
+          <h3>PC Builds</h3>
+          <p>Worked on multiple builds and setups with better tracking and flow.</p>
         </div>
+
         <div class="mini-card">
-          <h3>System Performance Optimization</h3>
-          <p>Improved system speed and stability through SSD/RAM upgrades, OS installation, BIOS setup, and cleanup.</p>
+          <h3>Upgrades</h3>
+          <p>Improved systems with SSD, RAM upgrades and clean setup.</p>
         </div>
+
       </div>
     </section>
 
     <section>
-      <h2>Core Skills</h2>
+      <h2>Skills</h2>
       <div class="skills">
-        <span class="skill">Hardware Diagnostics</span>
-        <span class="skill">Software Diagnostics</span>
-        <span class="skill">System Optimization</span>
-        <span class="skill">BIOS / UEFI</span>
-        <span class="skill">Windows Installation</span>
-        <span class="skill">System Imaging</span>
-        <span class="skill">Remote Support</span>
-        <span class="skill">Client Support</span>
-        <span class="skill">Workflow Improvement</span>
+        <span class="skill">Diagnostics</span>
+        <span class="skill">Hardware</span>
+        <span class="skill">Windows</span>
+        <span class="skill">BIOS</span>
+        <span class="skill">Upgrades</span>
+        <span class="skill">Support</span>
       </div>
     </section>
 
@@ -296,18 +282,19 @@
 
     <section>
       <h2>Resume</h2>
-      <p>Download my full CV in PDF format.</p>
-      <a class="button" href="Nerit_Qerkezi_CV.pdf" download>Download Resume</a>
+      <a class="button" href="Nerit_Qerkezi_CV.pdf" download>Download CV</a>
     </section>
 
     <section>
       <h2>Contact</h2>
-      <p><strong>Phone:</strong> +383 44 404 577</p>
-      <p><strong>Email:</strong> <a href="mailto:nerit_qerkezi@outlook.com">nerit_qerkezi@outlook.com</a></p>
-      <p><strong>Location:</strong> Prishtinë, Kosovo</p>
+      <p>+383 44 404 577</p>
+      <p>nerit_qerkezi@outlook.com</p>
     </section>
 
-    <footer>© 2026 Nerit Qerkezi. All rights reserved.</footer>
+    <footer>
+      © 2026 Nerit Qerkezi
+    </footer>
+
   </main>
 </body>
 </html>
