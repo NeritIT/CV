@@ -1,13 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nerit Qerkezi | IT Technician</title>
+  <meta name="description" content="Nerit Qerkezi - IT Technician & Service Operations. Diagnostics, optimization, hardware support, and workflow improvement." />
+
+  <style>
+    :root {
+      --bg: #070b12;
+      --card: #0f1724;
+      --text: #f3f6fb;
+      --muted: #a9b4c4;
+      --accent: #38bdf8;
+      --border: #1f2a3a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #0b1f3b 0%, var(--bg) 45%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 56px 20px 40px;
+    }
+
+    .tag {
+      color: var(--accent);
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(40px, 8vw, 72px);
+      line-height: 1;
+      margin-bottom: 16px;
+      letter-spacing: -2px;
+    }
+
+    .headline {
+      font-size: clamp(20px, 4vw, 30px);
+      color: var(--text);
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .subline {
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 650px;
+      margin: 0 auto 28px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--bg);
+      background: var(--accent);
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .button.secondary {
+      color: var(--text);
+      background: transparent;
+      border: 1px solid var(--border);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      opacity: 0.92;
+    }
+
+    section {
+      background: rgba(15, 23, 36, 0.78);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 14px;
+      letter-spacing: -0.3px;
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .item {
+      padding: 18px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .item:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .item:last-child { padding-bottom: 0; }
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .date {
+      color: var(--accent);
+      font-size: 14px;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    ul {
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    li { margin-bottom: 6px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .mini-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      background: rgba(7, 11, 18, 0.5);
+    }
+
+    .mini-card h3 { color: var(--text); }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      border: 1px solid var(--border);
+      background: rgba(7, 11, 18, 0.55);
+      border-radius: 999px;
+      padding: 9px 13px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 22px 0 10px;
+      font-size: 14px;
+    }
+
+    a { color: var(--accent); }
+
+    @media (max-width: 700px) {
+      .page { padding: 30px 14px; }
+      header { padding-top: 36px; }
+      section { padding: 22px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
 <body>
   <main class="page">
     <header>
-      <div class="tag">IT Systems • Diagnostics • Service Operations</div>
+      <div class="tag">IT Systems & Service Operations</div>
       <h1>Nerit Qerkezi</h1>
-      <div class="headline">IT Technician</div>
-
-      <p class="subline">
-        7+ years working with client systems, diagnostics, repairs, upgrades, and real IT service environments.
-      </p>
+      <div class="headline">IT Technician & Hardware Specialist</div>
+      <p class="subline">Diagnostics • System Optimization • Hardware Support • Workflow Improvement</p>
 
       <div class="buttons">
         <a class="button" href="Nerit_Qerkezi_CV.pdf" download>Download Resume</a>
@@ -17,13 +210,8 @@
 
     <section>
       <h2>About Me</h2>
-      <p>
-        I work in IT service environments where systems need to be diagnosed, repaired, and returned quickly.
-        Most of my experience comes from real client work — hardware issues, Windows installs, upgrades, and troubleshooting.
-      </p>
-      <p>
-        Over time, I’ve learned to handle multiple systems at once, keep work organized, and maintain stability even when the workload is high.
-      </p>
+      <p>IT Technician with 7+ years of hands-on experience in hardware/software diagnostics, system repair, upgrades, and client support across high-volume IT service environments.</p>
+      <p>I focus on practical problem-solving, system stability, repair workflow improvement, and keeping client systems reliable under pressure.</p>
     </section>
 
     <section>
@@ -33,10 +221,9 @@
         <h3>IT Technician — PC Comp</h3>
         <div class="date">2025 – Present</div>
         <ul>
-          <li>Diagnose and repair client PCs and laptops.</li>
-          <li>Handle upgrades, Windows installs, BIOS setup, and system optimization.</li>
-          <li>Work on multiple systems at the same time when required.</li>
-          <li>Support junior technicians and maintain service quality.</li>
+          <li>Lead diagnostics and troubleshooting for client systems.</li>
+          <li>Manage hardware upgrades, configurations, and system optimization.</li>
+          <li>Support junior technicians and maintain service standards.</li>
         </ul>
       </div>
 
@@ -44,9 +231,9 @@
         <h3>Sales — Buton Electronics</h3>
         <div class="date">2024 – 2025</div>
         <ul>
-          <li>Helped clients choose hardware and electronics based on their needs.</li>
-          <li>Handled sales, communication, and after-sales support.</li>
-          <li>Recommended products based on performance, compatibility, and budget.</li>
+          <li>Assisted clients with hardware and software product selection.</li>
+          <li>Supported sales, customer communication, and after-sales service.</li>
+          <li>Recommended products based on performance and compatibility needs.</li>
         </ul>
       </div>
 
@@ -54,40 +241,33 @@
         <h3>IT Servicer & Sales — Point Computers</h3>
         <div class="date">2019 – 2024</div>
         <ul>
-          <li>Resolved 1000+ hardware and software issues.</li>
-          <li>Worked with 200+ active client systems.</li>
-          <li>Reduced repair turnaround time by improving diagnostics workflow.</li>
-          <li>Supported service, sales, inventory, and warranty processes.</li>
-          <li>Built and maintained custom systems (gaming, office, mining).</li>
+          <li>Resolved 1000+ hardware/software issues.</li>
+          <li>Managed 200+ active client systems with strong satisfaction and zero data-loss incidents.</li>
+          <li>Reduced repair turnaround time by 30% through workflow improvement.</li>
+          <li>Supported sales, inventory, returns, and warranty processes.</li>
         </ul>
       </div>
-
     </section>
 
     <section>
       <h2>Selected Work</h2>
       <div class="grid">
-
         <div class="mini-card">
-          <h3>Faster Diagnostics</h3>
-          <p>Improved repair workflow and reduced turnaround time by around 30%.</p>
+          <h3>Diagnostic Workflow Improvement</h3>
+          <p>Improved service workflow and reduced average repair turnaround time by 30%.</p>
         </div>
-
         <div class="mini-card">
-          <h3>Client Systems</h3>
-          <p>Handled 200+ active systems while maintaining stability and data safety.</p>
+          <h3>Client Systems Management</h3>
+          <p>Handled 200+ active client systems with strong satisfaction and zero data-loss incidents.</p>
         </div>
-
         <div class="mini-card">
-          <h3>PC Build Tracking</h3>
-          <p>Created a simple system to track multiple builds and reduce confusion in service flow.</p>
+          <h3>High-Volume PC Build Tracking</h3>
+          <p>Designed a practical tracking system for multiple PC builds to improve accountability and reduce confusion.</p>
         </div>
-
         <div class="mini-card">
-          <h3>System Upgrades</h3>
-          <p>Improved performance through SSD, RAM upgrades, cleanup, and proper system setup.</p>
+          <h3>System Performance Optimization</h3>
+          <p>Improved system speed and stability through SSD/RAM upgrades, OS installation, BIOS setup, and cleanup.</p>
         </div>
-
       </div>
     </section>
 
@@ -95,14 +275,14 @@
       <h2>Core Skills</h2>
       <div class="skills">
         <span class="skill">Hardware Diagnostics</span>
-        <span class="skill">Software Troubleshooting</span>
+        <span class="skill">Software Diagnostics</span>
         <span class="skill">System Optimization</span>
         <span class="skill">BIOS / UEFI</span>
         <span class="skill">Windows Installation</span>
-        <span class="skill">PC Assembly</span>
-        <span class="skill">System Upgrades</span>
+        <span class="skill">System Imaging</span>
         <span class="skill">Remote Support</span>
         <span class="skill">Client Support</span>
+        <span class="skill">Workflow Improvement</span>
       </div>
     </section>
 
@@ -116,7 +296,7 @@
 
     <section>
       <h2>Resume</h2>
-      <p>Download my full CV below.</p>
+      <p>Download my full CV in PDF format.</p>
       <a class="button" href="Nerit_Qerkezi_CV.pdf" download>Download Resume</a>
     </section>
 
@@ -127,9 +307,7 @@
       <p><strong>Location:</strong> Prishtinë, Kosovo</p>
     </section>
 
-    <footer>
-      © 2026 Nerit Qerkezi. All rights reserved.
-    </footer>
-
+    <footer>© 2026 Nerit Qerkezi. All rights reserved.</footer>
   </main>
 </body>
+</html>
